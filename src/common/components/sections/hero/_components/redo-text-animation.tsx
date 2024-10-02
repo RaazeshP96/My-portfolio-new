@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect } from "react";
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { useEffect } from 'react';
 
 export interface IRedoTextAnimationProps {
   delay: number;
@@ -11,19 +11,19 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0);
 
   const texts = [
-    "I’m a coding ninja, ready to tackle any challenge!",
-    "Pixels and code are my playground, let’s create magic!",
-    "Simplicity is the ultimate sophistication in design.",
-    "Debugging is like a treasure hunt, but with bugs!",
-    "Responsive design is my superpower, no matter the screen size.",
-    "Algorithms are the poetry of programming.",
-    "Teamwork makes the dream work, let’s build something amazing together!",
-    "Refactoring code is like decluttering your digital space.",
-    "Continuous learning keeps me sharp and ready for the future.",
-    "Elegant code is the hallmark of a skilled developer.",
+    'Every line of code is a brushstroke on the canvas of the web.',
+    'In the world of code, details matter as much as creativity.',
+    'Front-end is where design meets functionality, and magic happens.',
+    'Writing clean code is like writing a story the next developer can easily follow.',
+    'The beauty of code lies in its simplicity and elegance.',
+    'Great UI isn’t just about how it looks, but how it feels.',
+    'Testing is the guardrail for innovation — break it, then fix it stronger.',
+    'Coding is not just solving problems; it’s crafting solutions.',
+    'Version control is my time machine, taking me back when things go wrong.',
+    'A well-structured codebase is the foundation of every successful project.',
   ];
 
-  const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
+  const baseText = useTransform(textIndex, (latest) => texts[latest] || '');
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
@@ -33,12 +33,12 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
 
   useEffect(() => {
     animate(count, 60, {
-      type: "tween",
+      type: 'tween',
       delay: delay,
       duration: 3,
-      ease: "easeIn",
+      ease: 'easeIn',
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: 'reverse',
       repeatDelay: 1,
       onUpdate(latest) {
         if (updatedThisRound.get() === true && latest > 0) {
