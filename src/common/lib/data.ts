@@ -142,7 +142,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: filedriveImg,
-    link: 'https://github.com/bbyc4kes/file-drive',
+    link: 'https://github.com',
   },
   {
     title: 'Portfolio',
@@ -157,7 +157,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: portfolioImg,
-    link: 'https://github.com/bbyc4kes/portfolio',
+    link: 'https://github.com',
   },
   {
     title: 'Audit Master',
@@ -189,7 +189,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: surgeImg,
-    link: 'https://github.com/bbyc4kes/surge',
+    link: 'https://github.com',
   },
   {
     title: 'CampWithUs',
@@ -197,7 +197,7 @@ export const projectsData = [
       'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
     tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
     imageUrl: campwithusImg,
-    link: 'https://github.com/bbyc4kes/campwithus',
+    link: 'https://github.com',
   },
 ] as const;
 
