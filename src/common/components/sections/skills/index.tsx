@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import { skillsData } from "@/common/lib/data";
-import { useSectionInView } from "@/common/lib/hooks";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import SectionHeading from "@/common/components/shared/section-heading";
-import SectionDivider from "@/common/components/shared/section-divider";
+import React from 'react';
+import { skillsData } from '@/common/lib/data';
+import { useSectionInView } from '@/common/lib/hooks';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import SectionHeading from '@/common/components/shared/section-heading';
+import SectionDivider from '@/common/components/shared/section-divider';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -23,16 +23,16 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("skills");
+  const { ref } = useSectionInView('skills');
 
   return (
     <section
       id="skills"
       ref={ref}
-      className="flex w-full flex-col items-center justify-center py-24 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
+      className="flex w-full flex-col items-center justify-center py-4 lg:py-24 pb-1 lg:pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="my-26 mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
+      <ul className="my-26 mb-4  lg:mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
             className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80"

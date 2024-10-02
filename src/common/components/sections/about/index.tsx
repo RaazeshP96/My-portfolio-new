@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="z-50 flex h-[1000px] w-full flex-col items-center justify-start leading-8 dark:bg-darkBg dark:text-white md:scroll-mt-4 lg:h-[1100px] lg:scroll-mt-24"
+      className="z-50 flex h-auto md:h-[1000px] w-full flex-col items-center justify-start leading-8 dark:bg-darkBg dark:text-white md:scroll-mt-4 lg:h-[1100px] lg:scroll-mt-24"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -33,15 +33,29 @@ export default function About() {
       <div className="flex w-full flex-col items-center pt-8">
         <SectionHeading>About Me</SectionHeading>
         <motion.div
-          className="w-full overflow-hidden px-4 py-12 sm:w-[60%] sm:text-center lg:h-[700px] lg:w-[1040px] xl:w-[1180px]"
-          ref={divRef}
+          className="w-full overflow-hidden px-4 lg:py-12 sm:text-center xl:w-[1180px]"
           style={{
             scale: scaleProgess,
             opacity: opacityProgess,
           }}
         >
-          <div className="group relative w-full">
-            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
+          <div className="group flex flex-col sm:flex-row items-center  gap-4 w-full">
+            <div className="flex items-center justify-center">
+              <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
+                <div className="absolute inset-0 z-20 rounded-full opacity-10 lg:opacity-100 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-10"></div>
+                <div className="absolute inset-0">
+                  <Image
+                    src={portfolioImg}
+                    alt="portfolio image"
+                    placeholder="blur"
+                    width={470}
+                    height={470}
+                    className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
                   I'm a Fullstack Web Application Developer with expertise in
@@ -72,21 +86,6 @@ export default function About() {
                     </span>
                   </Link>
                 </p>
-              </div>
-            </div>
-            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
-              <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-10"></div>
-                <div className="absolute inset-0">
-                  <Image
-                    src={portfolioImg}
-                    alt="portfolio image"
-                    placeholder="blur"
-                    width={470}
-                    height={470}
-                    className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
-                  />
-                </div>
               </div>
             </div>
           </div>
