@@ -45,11 +45,9 @@ Follow these instructions to set up the project locally.
 ### Running the Project
 
 Start the development server:
-` npm run dev
-`
+`npm run dev`
 or
-` yarn dev
-`
+`yarn dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -73,6 +71,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you want to get in touch, you can reach me at [Rajesh Prajapati\](mailto:azimov.workspace@gmail.com).
+If you want to get in touch, you can reach me at [Rajesh Prajapati\](mailto:raazeshp96@gmail.com).
 
 Thank you for checking out my portfolio project!

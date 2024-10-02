@@ -43,25 +43,79 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'WhirrCrew',
-    location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
+    title: 'Readytowork.corp',
+    position: 'Software Engineer',
+    location: 'Kathmandu, Nepal',
+    link: 'https://nepal.readytowork.jp/',
+    description: [
+      {
+        title: 'Professional Summary:',
+        desc: [
+          'Proficient Next.js developer with a strong foundation in React fundamentals.',
+          'Skilled in managing component lifecycles and implementing best practices.',
+          'Expertise in JavaScript, DOM, CSS, HTML, and other front-end languages.',
+          'Specializes in creating responsive and visually appealing web applications.',
+        ],
+      },
+      {
+        title: 'Technical Skills:',
+        desc: [
+          'React: Proficient in leveraging React and its ecosystem.',
+          'Next.js: Expertise in utilizing Next.js and hooks to enhance performance and development efficiency.',
+          'Collaboration: Effective communication with cross-functional teams and senior management.',
+          'Isomorphic React: Advocated for the adoption of Next.js for improved server-side and client-side rendering.',
+          'Continuous Learning: Committed to staying updated with the latest industrydevelopments and new release versions.',
+        ],
+      },
+      {
+        title: 'User Interface Design:',
+        desc: [
+          'Utilized Ant Design (Antd) to create intuitive and visually appealing user interfaces, improving user satisfaction scores by 20%.',
+          'Demonstrated the ability to balance aesthetics with functionality for a better user experience, leading to a 15% increase in user engagement.',
+        ],
+      },
+    ],
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Jun 2024 - Present',
+    date: 'Nov 2011 - Aug 2024',
   },
   {
-    title: 'NAU',
-    location: 'Kyiv, Ukraine',
-    description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
-    icon: React.createElement(BookIcon),
-    date: 'Sep 2022 - Present',
-  },
-  {
-    title: 'Self-studying',
-    location: 'Czechia',
-    description: `Digging into Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    title: 'MPercept Technology',
+    position: 'Intern',
+    location: 'Lalitpur, Nepal',
+    link: 'https://www.linkedin.com/company/mpercept-technology/?originalSubdomain=np',
+    description: [
+      {
+        title: 'Summary:',
+        desc: [
+          'Acquired a strong grasp of RESTful APIs, demonstrating proficiency in designing, implementing, and consuming web services following REST principles.',
+          'Gained fundamental knowledge of Git version control, enabling effective collaboration and code management within development teams.',
+          'Sharpened written and verbal communication abilities through continuous practice, fostering clear and effective interaction in both technical and non-technical contexts.',
+          'Successfully designed and implemented multiple CRUD RESTful APIs using the Django Rest Framework, showcasing the ability to create robust and scalable web applications.',
+        ],
+      },
+    ],
     icon: React.createElement(LaptopMinimalIcon),
-    date: 'Jul 2022 - Present',
+    date: 'Nov 2019 - April 2020',
+  },
+  {
+    title: 'Tribhuvan University',
+    location: 'Kathmandu, Nepal',
+    position: 'Bsc CSIT • Student',
+    link: 'https://vedascollege.edu.np/',
+    description: [
+      {
+        title: 'Educational Qualification',
+        desc: [
+          "Completed Bachelor's in Computer Science and Information Technology (BSc CSIT).",
+          'Graduated from Vedas College (formerly known as Aberdeen International College).',
+          'The program was affiliated with Tribhuvan University.',
+          'Undertook a comprehensive 4-year course covering core computer science and IT principles.',
+          'Developed a passion for web development and software engineering during the course.',
+        ],
+      },
+    ],
+    icon: React.createElement(BookIcon),
+    date: '2015 - 2020',
   },
 ] as const;
 
