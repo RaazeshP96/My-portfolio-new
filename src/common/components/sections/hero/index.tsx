@@ -46,7 +46,7 @@ export default function Hero() {
                 animate={{ y: 0, x: '-50%', opacity: 1 }}
                 className="mb-10 text-start font-extrabold"
               >
-                Namastey🙏
+                Namaste!
               </motion.span>
                
               <br />
@@ -97,6 +97,18 @@ export default function Hero() {
                     height={25}
                     src={'/svgs/github.svg'}
                     alt="github icon"
+                  />
+                </a>
+                <a
+                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
+                  href="https://medium.com/@raazeshp96"
+                  target="_blank"
+                >
+                  <Image
+                    width={25}
+                    height={25}
+                    src={'/svgs/medium.svg'}
+                    alt="medium icon"
                   />
                 </a>
               </div>
