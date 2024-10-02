@@ -12,7 +12,7 @@ import { ModeToggle } from '@/common/theme/mode-toggler';
 export const metadata: Metadata = {
   title: 'Rajesh Prajapati | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Rajesh Prajapati! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
+    'Check out modern and stylish porfolio of an experienced Web Developer Rajesh Prajapati! Built using TypeScript, Next.js 14 and Tailwind CSS.',
 };
 
 const fontMontserrat = FontMontserrat({
