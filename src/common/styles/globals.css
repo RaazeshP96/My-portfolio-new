@@ -52,6 +52,17 @@
 html {
   font-size: 16px;
 }
+@media (max-width: 425px) {
+  .vertical-timeline-element-icon {
+    display: none !important;
+  }
+  .vertical-timeline-element-content {
+    margin-left: 0 !important;
+  }
+  .vertical-timeline-element-content-arrow {
+    display: none !important;
+  }
+}
 
 @layer base {
   * {
