@@ -7,7 +7,7 @@ import ActiveSectionContextProvider from '@/common/stores/active-section';
 import { ThemeProvider } from '@/common/theme/theme-provider';
 import Header from '@/common/components/shared/header';
 import Footer from '@/common/components/shared/footer';
-import { ModeToggle } from '@/common/theme/mode-toggler';
+import ModeToggle from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
   title: 'Rajesh Prajapati | Portfolio',

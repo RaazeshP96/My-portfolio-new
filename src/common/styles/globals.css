@@ -52,6 +52,13 @@
 html {
   font-size: 16px;
 }
+.vertical-timeline::before {
+  background: #ffcbb4 !important;
+}
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #ffcbb4, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
 @media (max-width: 425px) {
   .vertical-timeline-element-icon {
     display: none !important;

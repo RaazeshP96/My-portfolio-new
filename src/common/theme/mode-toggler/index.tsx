@@ -1,33 +1,51 @@
-"use client";
+'use client';
+import { useEffect, useState } from 'react';
+import { BsMoon, BsSun } from 'react-icons/bs';
+import { useTheme } from 'next-themes';
 
-import * as React from "react";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
+type Theme = 'light' | 'dark';
 
-import { Button } from "@/common/components/ui";
-import { useHasMounted } from "@/common/lib/hooks";
-
-export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
-  const hasMounted = useHasMounted();
+const ModeToggle = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    if (theme === 'light') {
+      setTheme('dark');
+      window.localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme('light');
+      window.localStorage.setItem('theme', 'light');
+    }
   };
 
-  if (!hasMounted) return null;
+  useEffect(() => {
+    setIsMounted(true);
+    const localTheme = window.localStorage.getItem('theme') as Theme | null;
+
+    if (localTheme) {
+      setTheme(localTheme);
+    } else {
+      if (systemTheme === 'light') {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+  }, [setTheme, systemTheme]);
+
+  //hydration
+  if (!isMounted) return null;
 
   return (
-    <Button
-      className="bg-transparent p-0 text-gray-700 opacity-80 dark:text-white"
-      size={"sm"}
+    <button
       onClick={toggleTheme}
+      className="fixed bottom-5 right-5 bg-[#EED193] w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border dark:border-white border-[#AB4A20] border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950"
     >
-      {theme === "light" ? (
-        <Sun className="h-4 w-4" />
-      ) : (
-        <Moon className="h-4 w-4" />
-      )}
-    </Button>
+      {theme === 'light' && <BsSun />}
+      {theme === 'dark' && <BsMoon />}
+    </button>
   );
-}
+};
+
+export default ModeToggle;
