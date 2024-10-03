@@ -1,13 +1,13 @@
 import React from 'react';
-
-import campwithusImg from '@/../public/images/camp-with-us.png';
+import babiewImg from '@/../public/images/babiew.png';
+import readytoworkImg from '@/../public/images/readytowork.png';
 import carcatalogImg from '@/../public/images/car-catalog.png';
-import filedriveImg from '@/../public/images/file-drive.png';
+import salesAgentImageUrl from '@/../public/images/sales-agent.png';
 import projectmanagementImg from '@/../public/images/project-management.png';
 import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
+import kowaImg from '@/../public/images/kowapet.png';
 import portfolioImg from '@/../public/images/portfolio.png';
-import auditMasterImg from '@/../public/images/audit-master.png';
+import kakiOkiImg from '@/../public/images/kaki-oki.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
@@ -120,30 +120,98 @@ export const experiencesData = [
 ] as const;
 
 export const images = {
-  campwithusImg,
+  readytoworkImg,
   carcatalogImg,
-  filedriveImg,
+  salesAgentImageUrl,
   projectmanagementImg,
   reactfoodImg,
+  babiewImg,
 };
 
 export const projectsData = [
   {
-    title: 'FileDrive',
-    description:
-      'A platform for decentralized file storage with robust user management.',
+    title: 'Sales-agent',
+    description: 'A recruitment platform specializing in sales recruitment.',
     tags: [
       'React',
       'TypeScript',
       'Next.js',
-      'Convex',
-      'Clerk',
-      'Shadcn',
-      'Tailwind',
+      'Axios',
+      'Tanstack Query',
+      'Styled-Component',
+      'GO lang',
     ],
-    imageUrl: filedriveImg,
-    link: 'https://github.com',
+    imageUrl: salesAgentImageUrl,
+    link: 'https://sales-agent.co.jp/',
   },
+  {
+    title: 'Babiew',
+    description:
+      'The Babiew project is a web e-commerce site, where we offer a curated selection of quality essentials to care for your little one.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Material UI',
+      'Axios',
+      'Tanstack Query',
+    ],
+    imageUrl: babiewImg,
+    link: 'https://www.babiew.com/',
+  },
+  {
+    title: 'Kaki-Oki',
+    description: `The Kaki-Oki is an innovative End-of-life platform designed to offer a meaningful way for individuals facing
+mortality to express their final thoughts.`,
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Ant Design',
+      'Axios',
+      'Tanstack Query',
+      'Styled-Component',
+      'GO lang',
+      'SQL',
+    ],
+    imageUrl: kakiOkiImg,
+    link: 'https://kaki-oki.com/',
+  },
+
+  {
+    title: 'Ready-to-work',
+    description:
+      'The portfolio website of Readytowork Corp, highlighting our expertise and innovative workforce solutions.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Ant Design',
+      'Axios',
+      'Framer Motion',
+      'Styled-Component',
+    ],
+    imageUrl: readytoworkImg,
+    link: 'https://readytowork.jp/',
+  },
+  {
+    title: 'Kowapets',
+    description:
+      'The Kowapet project is a system for a pet sales company, including a renewed homepage and a dashboard for content management.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Ant Design',
+      'Axios',
+      'Tanstack Query',
+      'Styled-Component',
+      'GO lang',
+    ],
+    imageUrl: kowaImg,
+    link: 'https://user-dot-kowapets.an.r.appspot.com/',
+  },
+
   {
     title: 'Portfolio',
     description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
@@ -152,52 +220,11 @@ export const projectsData = [
       'TypeScript',
       'Next.js',
       'Framer Motion',
-      'Cloudinary',
       'React Email',
       'Tailwind',
     ],
     imageUrl: portfolioImg,
-    link: 'https://github.com',
-  },
-  {
-    title: 'Audit Master',
-    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'OpenAI',
-      'SCRUM Methodology',
-      'End-to-End Development',
-    ],
-    imageUrl: auditMasterImg,
-    link: 'https://auditmaster.ai/',
-  },
-  {
-    title: 'Surge',
-    description:
-      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'MySQL',
-      'Clerk',
-      'Stripe Connect',
-      'Shadcn',
-      'Tailwind',
-    ],
-    imageUrl: surgeImg,
-    link: 'https://github.com',
-  },
-  {
-    title: 'CampWithUs',
-    description:
-      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
-    imageUrl: campwithusImg,
-    link: 'https://github.com',
+    link: 'https://rajeshp96.com.np/',
   },
 ] as const;
 
