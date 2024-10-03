@@ -70,8 +70,8 @@ export const experiencesData = [
       {
         title: 'User Interface Design:',
         desc: [
-          'Utilized Ant Design (Antd) to create intuitive and visually appealing user interfaces, improving user satisfaction scores by 20%.',
-          'Demonstrated the ability to balance aesthetics with functionality for a better user experience, leading to a 15% increase in user engagement.',
+          'Utilized Ant Design (Antd) to craft intuitive and visually appealing interfaces, boosting user satisfaction and engagement.',
+          'Demonstrated the ability to balance design aesthetics with functionality, leading to improved user experiences and engagement.',
         ],
       },
     ],
