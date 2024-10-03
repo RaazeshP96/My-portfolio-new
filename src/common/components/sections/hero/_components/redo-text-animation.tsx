@@ -11,16 +11,16 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0);
 
   const texts = [
-    'Every line of code is a brushstroke on the canvas of the web.',
-    'In the world of code, details matter as much as creativity.',
-    'Front-end is where design meets functionality, and magic happens.',
-    'Writing clean code is like writing a story the next developer can easily follow.',
-    'The beauty of code lies in its simplicity and elegance.',
-    'Great UI isn’t just about how it looks, but how it feels.',
-    'Testing is the guardrail for innovation — break it, then fix it stronger.',
-    'Coding is not just solving problems; it’s crafting solutions.',
-    'Version control is my time machine, taking me back when things go wrong.',
-    'A well-structured codebase is the foundation of every successful project.',
+    'Code is a brushstroke on the web canvas.',
+    'In code, details and creativity both matter.',
+    'Front-end is where design meets function.',
+    'Clean code is a story for the next developer.',
+    'Code beauty lies in simplicity and elegance.',
+    'Great UI is about feel, not just looks.',
+    'Testing is the guardrail for innovation.',
+    'Coding is crafting, not just problem-solving.',
+    'Version control is my time machine for fixes.',
+    'A strong codebase is key to any project.',
   ];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || '');
