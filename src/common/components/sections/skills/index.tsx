@@ -50,6 +50,7 @@ export default function Skills() {
               alt={`${skill[0]} logo`}
               width={24}
               height={24}
+              loading="lazy"
               className="mr-2 inline h-6 w-6"
             />
             {skill[0]}

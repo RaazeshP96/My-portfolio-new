@@ -45,7 +45,8 @@ export default function About() {
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
-                    alt={portfolioImg.src.split('/')[3]}
+                    alt="Rajesh Prajapati - Next.js Developer from Nepal"
+                    loading="lazy"
                     placeholder="blur"
                     className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
                   />

@@ -10,9 +10,20 @@ import Footer from '@/common/components/shared/footer';
 import ModeToggle from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
-  title: 'Rajesh Prajapati | Portfolio',
+  title: 'Rajesh Prajapati | Software Engineer | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Rajesh Prajapati! Built using TypeScript, Next.js 14 and Tailwind CSS.',
+    'Rajesh Prajapati is an experienced software engineer specializing in Next.js development. Discover the portfolio of a skilled Nepali frontend engineer and web developer.',
+  keywords: [
+    'Rajesh',
+    'Raazesh Prajapati',
+    'Rajesh Prajapati',
+    'Next.js developer',
+    'React.js developer',
+    'Frontend engineer',
+    'Software engineer',
+    'Nepali software engineer',
+    'Web developer',
+  ],
 };
 
 const fontMontserrat = FontMontserrat({
