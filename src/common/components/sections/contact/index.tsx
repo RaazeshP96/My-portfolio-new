@@ -56,11 +56,19 @@ export default function Contact() {
       <div className="w-[min(100%,38rem)] px-4">
         <p className="mb-20 mt-6 text-gray-700 dark:text-white/80">
           Feel free to reach out to me directly at
-          <a className="underline" href="tel:+9779849426552">
+          <a
+            className="underline"
+            href="tel:+9779849426552"
+            aria-label="contact number"
+          >
             +9779849426552
           </a>{' '}
           or{' '}
-          <a className="underline" href="mailto:raazeshp96@gmail.com">
+          <a
+            className="underline"
+            href="mailto:raazeshp96@gmail.com"
+            aria-label="contact email"
+          >
             raazeshp96@gmail.com
           </a>
           . <br />

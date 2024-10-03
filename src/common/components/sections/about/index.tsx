@@ -45,10 +45,8 @@ export default function About() {
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
-                    alt="portfolio image"
+                    alt={portfolioImg.src.split('/')[3]}
                     placeholder="blur"
-                    width={470}
-                    height={470}
                     className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
                   />
                 </div>

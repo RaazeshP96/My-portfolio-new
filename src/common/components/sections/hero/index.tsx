@@ -29,14 +29,25 @@ export default function Hero() {
         <video
           width="480"
           height="720"
-          preload="metadata"
+          preload="auto"
           autoPlay
           crossOrigin="anonymous"
           muted
           loop
+          playsInline
           className="absolute -z-10 h-screen w-screen object-cover object-right sm:object-center"
         >
-          <source src="/layout.mp4" />
+          <source src="/layout.mp4" type="video/mp4" />
+
+          <Image
+            src="/fallback.jpg"
+            fill
+            alt="fallback image"
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+          />
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="relative flex h-full w-full flex-col items-center">
@@ -62,6 +73,8 @@ export default function Hero() {
             >
               <a
                 className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
+                href="#contact"
+                aria-label="contact me here section"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: 'contact' });
                   setActiveSection('contact');
@@ -75,6 +88,8 @@ export default function Hero() {
                 className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
                 href="/Rajesh_prajapati_resume.pdf"
                 download
+                target="_blank"
+                aria-label="download resume"
               >
                 <span>Download CV</span>
               </a>
@@ -84,6 +99,7 @@ export default function Hero() {
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://www.linkedin.com/in/raazeshp96/"
                   target="_blank"
+                  aria-label="linkedin profile"
                 >
                   <Linkedin />
                 </a>
@@ -91,6 +107,7 @@ export default function Hero() {
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://github.com/RaazeshP96"
                   target="_blank"
+                  aria-label="github profile"
                 >
                   <Image
                     width={25}
@@ -103,6 +120,7 @@ export default function Hero() {
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://medium.com/@raazeshp96"
                   target="_blank"
+                  aria-label="medium profile"
                 >
                   <Image
                     width={25}

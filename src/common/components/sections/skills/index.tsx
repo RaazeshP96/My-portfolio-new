@@ -32,10 +32,10 @@ export default function Skills() {
       className="flex w-full flex-col scroll-mt-10 sm:scroll-mt-20 items-center justify-center py-4  text-center dark:bg-darkBg dark:text-white"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="mb-4  flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
+      <ul className="mb-4 flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800 dark:text-gray-100">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-gray-100"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -47,7 +47,7 @@ export default function Skills() {
           >
             <Image
               src={skill[1]}
-              alt={skill[0]}
+              alt={`${skill[0]} logo`}
               width={24}
               height={24}
               className="mr-2 inline h-6 w-6"
@@ -56,6 +56,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
+
       <div className="flex w-full justify-center dark:bg-darkBg">
         <SectionDivider />
       </div>
