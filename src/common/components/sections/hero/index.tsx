@@ -29,7 +29,7 @@ export default function Hero() {
         <video
           width="480"
           height="720"
-          preload="none"
+          preload="metadata"
           autoPlay
           crossOrigin="anonymous"
           muted
