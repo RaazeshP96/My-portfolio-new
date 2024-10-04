@@ -10,11 +10,16 @@ import Footer from '@/common/components/shared/footer';
 import ModeToggle from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
-  title: 'Rajesh Prajapati | Software Engineer | Portfolio',
+  title: 'Rajesh Prajapati | Portfolio | Software Engineer',
   description:
     'Rajesh Prajapati is an experienced software engineer specializing in Next.js development. Discover the portfolio of a skilled Nepali frontend engineer and web developer.',
   keywords: [
     'Rajesh',
+    'Raazesh',
+    'Frontend developer',
+    'Rajeshp96',
+    'Raazeshp96',
+    'Full stack developer',
     'Raazesh Prajapati',
     'Rajesh Prajapati',
     'Next.js developer',
