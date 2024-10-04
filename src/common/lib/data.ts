@@ -76,7 +76,7 @@ export const experiencesData = [
       },
     ],
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Nov 2011 - Aug 2024',
+    date: 'Nov 2020 - Aug 2024',
   },
   {
     title: 'MPercept Technology',
