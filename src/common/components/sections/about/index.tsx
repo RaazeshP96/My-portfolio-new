@@ -56,19 +56,21 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span className="text-center sm:text-left">
-                  I'm a Fullstack Web Application Developer with expertise in
-                  HTML5, CSS3, JavaScript frameworks like React.js and Next.js,
-                  and backend technologies including Go (Golang), Gin Gonic,
-                  Django, and Python.
+                  Frontend Engineer with 5+ years of experience specializing in 
+                  <strong> React, TypeScript, and modern design systems</strong>. 
+                  Skilled at reviewing and refining complex codebases, ensuring UI accuracy, 
+                  and optimizing performance.
                 </span>
                 <span className="text-center sm:text-left">
-                  I have a proven ability to develop seamless, responsive web
-                  applications focused on user experience and performance.
+                  Experienced in collaborating with design teams using tools like 
+                  <strong> Figma</strong> and component libraries 
+                  (<strong>MUI, Ant Design</strong>) to deliver consistent, scalable, 
+                  and user-centric applications.
                 </span>
                 <span className="text-center sm:text-left">
-                  I'm seeking Software Engineering opportunities where I can
-                  leverage my skills to build impactful, user-centered solutions
-                  and make meaningful contributions.
+                  Passionate about creating seamless, responsive web applications 
+                  that balance aesthetics with functionality, ensuring optimal user 
+                  experiences across all devices.
                 </span>
                 <p className="flex flex-col items-center ">
                   <span className="text-center sm:text-left">
