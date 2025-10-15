@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { Montserrat as FontMontserrat } from 'next/font/google';
-import { cn } from '@/common/lib/utils';
-import '@/common/styles/globals.css';
+import { cn } from '@/lib/utils';
+import '@/styles/globals.css';
 import { Toaster } from 'react-hot-toast';
-import ActiveSectionContextProvider from '@/common/stores/active-section';
-import { ThemeProvider } from '@/common/theme/theme-provider';
-import Header from '@/common/components/shared/header';
-import Footer from '@/common/components/shared/footer';
-import ModeToggle from '@/common/theme/mode-toggler';
+import ActiveSectionContextProvider from '@/lib/active-section';
+import { ThemeProvider } from '@/lib/theme-provider';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import ModeToggle from '@/lib/mode-toggler';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={cn(
           'relative flex items-center justify-center',
           fontMontserrat.className,

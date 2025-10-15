@@ -11,6 +11,12 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  // Enable static optimization for better performance
+  output: 'standalone',
+  // Optimize for server-side rendering
+  trailingSlash: false,
+  // Enable React 19 features
+  reactStrictMode: true,
 }
 
 export default nextConfig
