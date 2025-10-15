@@ -14,7 +14,7 @@ import SectionDivider from '@/components/section-divider';
 import Link from 'next/link';
 
 export default function Experience() {
-  const { ref } = useSectionInView('experience');
+  const { ref } = useSectionInView('experience', 0.25);
   const { theme } = useTheme();
   const hasMounted = useHasMounted(); // Renamed for clarity
 
